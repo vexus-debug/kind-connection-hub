@@ -30,6 +30,11 @@ export default {
 					soft: 'hsl(var(--primary-soft))',
 					deep: 'hsl(var(--primary-deep))'
 				},
+				gold: {
+					DEFAULT: 'hsl(var(--gold))',
+					light: 'hsl(var(--gold-light))',
+					dark: 'hsl(var(--gold-dark))'
+				},
 				'accent-green': {
 					DEFAULT: 'hsl(var(--accent-green))',
 					foreground: 'hsl(var(--accent-foreground))',
@@ -76,14 +81,14 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
-		boxShadow: {
-				'soft': '0 4px 20px hsl(72 90% 42% / 0.35)',
-				'elegant': '0 8px 30px hsl(72 90% 42% / 0.45)',
-				'accent': '0 4px 20px hsl(68 85% 42% / 0.55)',
-				'bold': '0 6px 28px hsl(72 90% 42% / 0.55)',
-				'vibrant': '0 10px 40px hsl(68 85% 42% / 0.65)',
-				'green-glow': '0 0 20px hsl(72 90% 42% / 0.4)',
-				'green-strong': '0 8px 32px hsl(72 90% 42% / 0.5)'
+			boxShadow: {
+				'soft': '0 4px 20px hsl(330 72% 49% / 0.25)',
+				'elegant': '0 8px 30px hsl(330 72% 49% / 0.35)',
+				'accent': '0 4px 20px hsl(43 85% 66% / 0.45)',
+				'bold': '0 6px 28px hsl(330 72% 49% / 0.45)',
+				'vibrant': '0 10px 40px hsl(43 85% 66% / 0.55)',
+				'rose-glow': '0 0 20px hsl(330 72% 49% / 0.4)',
+				'gold-glow': '0 8px 32px hsl(43 85% 66% / 0.5)'
 			},
 			keyframes: {
 				'accordion-down': {
