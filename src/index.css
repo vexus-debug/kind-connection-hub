@@ -2,83 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Farielas Spa Design System - Zen Wellness Green & Natural Theme */
+/* Fedo Beauty Spa Design System - Rose & Gold Elegant Theme */
 
 @layer base {
   :root {
-    /* Base Colors - Crisp Cream & Natural Tones (Bold) */
-    --background: 55 35% 96%;
-    --foreground: 80 40% 15%;
+    /* Base Colors - Off-White/Cream Background */
+    --background: 43 47% 95%;        /* #F9F5EB cream background */
+    --foreground: 330 70% 25%;       /* Deep rose-tinted dark for text */
 
     /* Card Colors */
-    --card: 60 35% 98%;
-    --card-foreground: 80 40% 15%;
+    --card: 43 40% 98%;              /* Slightly lighter cream for cards */
+    --card-foreground: 330 70% 25%;
 
     /* Popover Colors */
-    --popover: 60 35% 98%;
-    --popover-foreground: 80 40% 15%;
+    --popover: 43 40% 98%;
+    --popover-foreground: 330 70% 25%;
 
-    /* Brand Colors - VIBRANT Lime Green Palette (PUNCHY) */
-    --primary: 72 90% 42%;           /* Bold lime green from logo */
+    /* Brand Colors - Deep Rose/Magenta Palette */
+    --primary: 330 72% 49%;          /* #D22779 Deep Rose */
     --primary-foreground: 0 0% 100%;
-    --primary-soft: 72 85% 48%;      /* More saturated lime green */
-    --primary-deep: 78 80% 28%;      /* Deeper forest green */
+    --primary-soft: 330 65% 55%;     /* Softer rose */
+    --primary-deep: 330 80% 38%;     /* Deeper magenta */
 
-    /* Natural Yellow-Green Accents (ELECTRIC) */
-    --accent-green: 68 85% 42%;      /* Electric yellow-green accent */
-    --accent-foreground: 80 30% 20%;
-    --accent-light: 68 80% 58%;      /* Brighter lime highlight */
-    --accent-dark: 68 85% 32%;       /* Deep yellow-green */
+    /* Gold Accent Colors */
+    --accent-green: 43 85% 66%;      /* #F3C95E Metallic Gold */
+    --accent-foreground: 330 70% 20%;
+    --accent-light: 43 90% 75%;      /* Lighter gold highlight */
+    --accent-dark: 43 80% 50%;       /* Deeper gold */
 
     /* Secondary Colors */
-    --secondary: 72 50% 82%;         /* More visible lime tint */
-    --secondary-foreground: 80 40% 15%;
+    --secondary: 330 35% 88%;        /* Light rose tint */
+    --secondary-foreground: 330 70% 25%;
 
     /* Muted Colors */
-    --muted: 70 30% 78%;
-    --muted-foreground: 75 30% 42%;
+    --muted: 43 25% 85%;             /* Muted cream */
+    --muted-foreground: 330 30% 45%;
 
     /* Accent Colors */
-    --accent: 75 55% 80%;
-    --accent-foreground: 80 40% 15%;
+    --accent: 43 50% 80%;            /* Warm gold accent */
+    --accent-foreground: 330 70% 20%;
 
     /* System Colors */
     --destructive: 0 65% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 72 45% 70%;
-    --input: 72 40% 72%;
-    --ring: 72 50% 55%;
+    --border: 330 25% 80%;           /* Rose-tinted border */
+    --input: 330 20% 82%;
+    --ring: 330 60% 55%;             /* Rose ring for focus */
 
     --radius: 0.5rem;
 
-    /* Gradients for Wellness Feel */
+    /* Gold Color Token */
+    --gold: 43 85% 66%;              /* #F3C95E for star ratings, etc. */
+    --gold-light: 43 90% 75%;
+    --gold-dark: 43 80% 50%;
+
+    /* Gradients for Elegant Feel */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary-soft)), hsl(var(--primary)));
     --gradient-accent: linear-gradient(135deg, hsl(var(--accent-light)), hsl(var(--accent-green)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary-soft)) 0%, hsl(var(--background)) 100%);
     --gradient-section: linear-gradient(180deg, hsl(var(--background)), hsl(var(--secondary)));
-    --zen-gradient: linear-gradient(135deg, hsl(var(--primary-soft)), hsl(var(--accent-light)), hsl(var(--primary)));
+    --rose-gold-gradient: linear-gradient(135deg, hsl(var(--primary-soft)), hsl(var(--accent-light)), hsl(var(--primary)));
 
-    /* Shadows for Natural Depth (BOLD & STRONG) */
-    --shadow-soft: 0 4px 20px hsl(var(--primary) / 0.35);
-    --shadow-elegant: 0 8px 30px hsl(var(--primary) / 0.45);
-    --shadow-accent: 0 4px 20px hsl(var(--accent-green) / 0.55);
-    --nature-shadow: 0 6px 24px hsl(var(--primary) / 0.4);
-    --shadow-bold: 0 6px 28px hsl(var(--primary) / 0.55);
-    --shadow-vibrant: 0 10px 40px hsl(var(--accent-green) / 0.65);
+    /* Shadows for Elegant Depth */
+    --shadow-soft: 0 4px 20px hsl(var(--primary) / 0.25);
+    --shadow-elegant: 0 8px 30px hsl(var(--primary) / 0.35);
+    --shadow-accent: 0 4px 20px hsl(var(--accent-green) / 0.45);
+    --nature-shadow: 0 6px 24px hsl(var(--primary) / 0.3);
+    --shadow-bold: 0 6px 28px hsl(var(--primary) / 0.45);
+    --shadow-vibrant: 0 10px 40px hsl(var(--accent-green) / 0.55);
 
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 43 40% 98%;
+    --sidebar-foreground: 330 70% 25%;
+    --sidebar-primary: 330 72% 49%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 43 50% 92%;
+    --sidebar-accent-foreground: 330 70% 25%;
+    --sidebar-border: 330 20% 88%;
+    --sidebar-ring: 330 72% 49%;
   }
 
   .dark {
